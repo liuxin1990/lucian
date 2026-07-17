@@ -1,0 +1,12 @@
+---
+description: 全局短约束：省 token、少废话
+alwaysApply: true
+---
+
+# 全局约束
+
+- 回复简洁：结论先行，每点一两句；不要复述用户需求
+- 不要把整文件、整日志、大段文档贴进回复，除非必要
+- 优先改相关文件；不要扩散无关重构
+- 长流程用 Skill（`/java-build-test`、`/spring-conventions`、`/pr-checklist`），不要在每轮重复讲规范
+- 未要求时不写 README/教程/总结文档

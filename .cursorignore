@@ -1,0 +1,46 @@
+# Java / Spring 噪音与产物（配合 .gitignore）
+
+# 构建产物
+**/target/
+**/build/
+**/out/
+**/.gradle/
+**/bin/
+
+# IDE / 工具
+**/.idea/
+**/*.iml
+**/.vscode/
+**/.classpath
+**/.project
+**/.settings/
+
+# 日志与临时
+**/logs/
+**/*.log
+**/tmp/
+**/.DS_Store
+
+# 密钥与本地配置（防误入上下文）
+**/.env
+**/.env.*
+**/application-local.yml
+**/application-local.properties
+**/application-secret.*
+**/*.pem
+**/*.key
+**/*.jks
+**/*.keystore
+
+# 大型生成 / 覆盖率 / 报告
+**/generated-sources/
+**/generated-test-sources/
+**/jacoco/
+**/coverage/
+**/surefire-reports/
+**/failsafe-reports/
+**/spotbugs/
+**/checkstyle-result.xml
+
+# 依赖缓存（若被拷进仓库）
+**/.m2/repository/

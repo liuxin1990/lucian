@@ -1,0 +1,18 @@
+---
+description: Java/Spring 文件触达时的最小约束（非 Always）
+globs:
+  - "**/*.java"
+  - "**/pom.xml"
+  - "**/build.gradle*"
+  - "**/application*.yml"
+  - "**/application*.properties"
+alwaysApply: false
+---
+
+# Java 触达规则
+
+- 保持现有分层与包结构；新增代码贴合相邻类风格
+- 注释用中文；每个方法有一行简短功能说明
+- 不擅自升级依赖大版本；不引入未使用的库
+- 需要构建/测试流程时调用 Skill `java-build-test`
+- 涉及 Controller/Service/Repository 时遵循 `spring-conventions`
