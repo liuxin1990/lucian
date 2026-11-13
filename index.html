@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+  <title>浪尖酷跑 - 冲浪跑酷原型</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+      background: #06213d;
+      overflow: hidden;
+      /* 禁止触屏默认的滚动/缩放手势，交给游戏处理 */
+      touch-action: none;
+      -webkit-user-select: none;
+      user-select: none;
+    }
+    body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    canvas {
+      display: block;
+      touch-action: none;
+      box-shadow: 0 0 40px rgba(0, 0, 0, 0.5);
+    }
+  </style>
+</head>
+<body>
+  <canvas id="game" width="960" height="540"></canvas>
+  <script src="game.js"></script>
+</body>
+</html>
